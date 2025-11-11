@@ -1,0 +1,78 @@
+# Dropper Plugin Configuration
+
+# General Settings
+settings:
+  # Auto-save interval in seconds
+  auto-save-interval: 300
+
+  # Enable debug messages
+  debug: false
+
+  # Teleport players back to checkpoint on fall
+  teleport-on-fall: true
+
+  # Clear player inventory when starting dropper
+  clear-inventory: true
+
+  # Restore inventory when leaving dropper
+  restore-inventory: true
+
+  # Enable statistics tracking
+  enable-stats: true
+
+# Gameplay Settings
+gameplay:
+  # Minimum Y level before teleporting to checkpoint (or 0 for void)
+  min-y-level: -64
+
+  # Allow player to fly in dropper
+  allow-flight: false
+
+  # Damage multiplier (0.0 = no damage, 1.0 = normal damage)
+  damage-multiplier: 0.0
+
+  # Time limit per level in seconds (0 = no limit)
+  time-limit: 0
+
+  # Rewards for completing levels
+  rewards:
+    enabled: false
+    # Commands to run when player completes a map (%player% placeholder)
+    completion-commands:
+      - "give %player% diamond 1"
+
+# Messages
+messages:
+  prefix: "&8[&bDropper&8]&r "
+
+  map-created: "&aDropper map '%map%' created successfully!"
+  map-deleted: "&cDropper map '%map%' deleted!"
+  map-not-found: "&cDropper map '%map%' not found!"
+  map-already-exists: "&cDropper map '%map%' already exists!"
+
+  level-set: "&aLevel %level% set for map '%map%'!"
+  checkpoint-set: "&aCheckpoint set for level %level% in map '%map%'!"
+
+  game-started: "&aStarted dropper map '%map%'! Good luck!"
+  game-stopped: "&cYou left the dropper map."
+  game-completed: "&6&lCongratulations! You completed '%map%' in %time%!"
+
+  level-completed: "&aLevel %level% complete! Moving to level %next%..."
+  checkpoint-reached: "&eCheckpoint reached!"
+
+  teleported-checkpoint: "&eTeleported to checkpoint."
+  no-active-game: "&cYou are not in a dropper game!"
+  already-in-game: "&cYou are already in a dropper game!"
+
+  map-list-header: "&b&lAvailable Dropper Maps:"
+  map-list-entry: "&7- &f%map% &8(&7%levels% levels&8)"
+  no-maps: "&cNo dropper maps found!"
+
+  stats-header: "&b&lYour Dropper Statistics:"
+  stats-plays: "&7Total Plays: &f%plays%"
+  stats-completions: "&7Completions: &f%completions%"
+  stats-best-time: "&7Best Time: &f%time%"
+
+  no-permission: "&cYou don't have permission to do that!"
+  player-only: "&cThis command can only be used by players!"
+  invalid-args: "&cInvalid arguments! Use: %usage%"
