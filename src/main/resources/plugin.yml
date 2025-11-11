@@ -1,0 +1,38 @@
+name: DropperPlugin
+version: '${project.version}'
+main: com.noctivag.dropper.DropperPlugin
+api-version: '1.20'
+author: Noctivag
+description: Next Level Dropper Plugin with Map Storage and Level Progression
+
+commands:
+  dropper:
+    description: Main dropper command
+    usage: /<command> [create|delete|start|stop|setlevel|checkpoint|list|stats|tp]
+    permission: dropper.use
+    aliases: [drop, dr]
+
+permissions:
+  dropper.use:
+    description: Allows use of basic dropper commands
+    default: true
+  dropper.admin:
+    description: Allows administration of dropper maps
+    default: op
+    children:
+      dropper.use: true
+  dropper.create:
+    description: Allows creating dropper maps
+    default: op
+  dropper.delete:
+    description: Allows deleting dropper maps
+    default: op
+  dropper.setlevel:
+    description: Allows setting level locations
+    default: op
+  dropper.checkpoint:
+    description: Allows setting checkpoints
+    default: op
+  dropper.tp:
+    description: Allows teleporting to maps
+    default: op
