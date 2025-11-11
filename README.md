@@ -171,8 +171,8 @@ The compiled JAR file will be in `target/dropper-plugin-1.0.0.jar`
 
 ## Requirements
 
-- **Minecraft Version**: 1.20.4 (compatible with Paper/Spigot)
-- **Java Version**: 17 or higher
+- **Minecraft Version**: 1.21.1 (compatible with Paper/Spigot)
+- **Java Version**: 21 or higher
 - **Server Software**: Paper, Spigot, or Bukkit
 
 ## Support
@@ -187,4 +187,4 @@ This plugin is provided as-is for use on Minecraft servers.
 
 **Version**: 1.0.0
 **Author**: Noctivag
-**API**: Paper 1.20.4
+**API**: Paper 1.21.1
